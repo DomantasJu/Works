@@ -1,0 +1,501 @@
+$color-white: #fff;
+$color-black: #000;
+$color-dark-grey: #333;
+$color-light-grey: #aaa;
+
+
+/////////////////////////Break Points////////////////
+
+
+$bp-1050: 62.625em;
+$bp-1000: 62.5em;
+$bp-950: 59.375em;
+$bp-900: 56.25em;
+$bp-800: 50em;
+$bp-750: 46.875em;
+$bp-700: 43.75em;
+$bp-650: 40.625em;
+$bp-550: 34.375em;
+$bp-500: 31.25em;
+$bp-400: 25em;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+
+
+
+////////////////headeris
+
+.navigation {
+    width: 100%;
+    height: 4rem;
+    background-color: #c3c4c4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+
+    &__search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        width: 20rem;
+        height: 2.5rem;
+        border-radius: 50px;
+        background: #222;
+        color: #fff;
+        padding: 0 1rem;
+        outline: none;
+        border: none;
+    }
+
+    &__label {
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #444;
+        align-self: center;
+        justify-self: center;
+        margin-left: 0.5rem;
+    }
+}
+
+.nav-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background: #4a4a4a;
+
+    @media only screen and (max-width: 650px) {
+        display: none;
+    }
+
+    &__list {}
+
+    &__items {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+    }
+
+    &__links {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: #fff;
+        display: block;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: translateY(1px);
+            color: #ccc;
+        }
+    }
+}
+
+
+.main {
+    width: 100%;
+    background: #000;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    &__heading {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin: 2rem 0;
+        font-weight: normal;
+
+    }
+
+    &__text {
+        width: 60%;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 2.2rem;
+    }
+
+
+    &__team {
+        // display: grid;
+        // grid-template-columns: repeat(3,minmax(25rem, 35rem));
+        // grid-column-gap: 6rem;
+        // grid-row-gap: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        align-content: center;
+        justify-content: space-evenly;
+        justify-items: center;
+
+
+
+        &--box {
+            width: 30rem;
+            text-align: center;
+            margin-bottom: 3rem;
+
+
+            &-img {
+                width: 100%;
+                height: 30rem;
+                object-fit: cover;
+            }
+
+            &-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.4;
+                margin: 1.5rem;
+                text-transform: uppercase;
+                font-size: 1.6rem;
+            }
+
+            &-text {
+                font-size: 1.2rem;
+                text-align: center;
+
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+
+////////////////////footeris
+
+.footer {
+    width: 100%;
+    height: 3rem;
+    background: #c3c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        font-size: 2rem;
+        color: black;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+}
+
+/////////////////////perjugimo mygtukas
+
+.toggle {
+    position: relative;
+    // display: none;
+
+    @media only screen and (max-width: $bp-700) {
+        display: block;
+    }
+
+
+    &__check {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__menu {
+
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        z-index: 400;
+        cursor: pointer;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 2px solid #000;
+
+
+        &--bar {
+            width: 2.4rem;
+            background: #000;
+            height: 2px;
+            display: flex;
+            transition: all 0.3s;
+
+            &:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    &__extend {
+        width: 0;
+        opacity: 0;
+        visibility: hidden;
+        width: 0rem;
+        height: 100vh;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 300;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+
+    }
+
+    &__list {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-content: center;
+        justify-items: start;
+        justify-content: center;
+        transition: all 0.5s;
+        transform: translateY(10rem);
+        visibility: hidden;
+        opacity: 0;
+
+        li {
+            display: flex;
+            transition: all 0.4s;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &::before {
+                content: "";
+                color: #000;
+                margin-right: 1rem;
+                font-size: 1.8rem;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                display: flex;
+                transition: all 0.3s;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+
+            &:hover::before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        a {
+            font-size: 1.5rem;
+            color: #000;
+        }
+    }
+
+    &__check:checked~&__extend {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s;
+        width: 24rem;
+    }
+
+    &__check:checked~&__extend &__list {
+        transform: translateY(0rem);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__check:checked+&__menu {
+
+        position: fixed;
+        top: 3.4%;
+        left: 1.8%;
+        border: none;
+
+
+
+        @media only screen and (max-width: $bp-650) {
+            right: 2%;
+        }
+    }
+
+
+    &__check:checked+&__menu &__menu--bar-2 {
+        width: 0;
+        opacity: 0;
+    }
+
+    &__check:checked+&__menu &__menu--bar-1 {
+        transform: rotate(45deg) translateX(-.30rem) translateY(-.3rem);
+        transform-origin: left;
+    }
+
+    &__check:checked+&__menu &__menu--bar-3 {
+        transform-origin: left;
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+
+/////////////////////////////kontaktu langas
+
+
+.contact {
+    width: 100%;
+    background: #000;
+    height: calc(100vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+
+    @media only screen and (max-width:600px){
+    height: calc(100vh - 7rem);
+    }
+
+
+    &__heading {
+        font-size: 2.4rem;
+        margin: 2rem 0;
+
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__form {
+
+
+        &--group {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            &:first-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media only screen and (max-width:500px){
+                    flex-direction: column;
+                    
+                    input{
+                        &:not(:last-child){
+                            margin-bottom: 2rem;
+                        }
+                    }
+            }
+
+            input {
+                &:not(:last-child) {
+                    margin-right: 1rem;
+
+                    @media only screen and (max-width:500px){
+                        margin-right: 0;
+                }
+                }
+            }
+
+        }
+    }
+
+    &--input {
+        background-color: #ccc;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 0 1.4rem;
+        height: 3.5rem;
+        width: 100%;
+
+        &::placeholder {
+            color: #333;
+        }
+    }
+
+
+    &--message {
+        background-color: #ccc;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 1rem 1.4rem;
+        width: 100%;
+
+        &::placeholder {
+            color: #333;
+        }
+    }
+
+    &--btn {
+        cursor: pointer;
+        color: #333;
+        font-weight: bold;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #aaa;
+            color: #222;
+        }
+    }
+}
+}

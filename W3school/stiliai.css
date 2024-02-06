@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.baltajuosta{
+    height: 80px;
+    display: inline-block;
+  
+
+}
+
+.zodis{
+    position: relative;
+    display: inline-block;
+    left: 100px;
+    top: -5px;
+    padding-left: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.meniu{
+    position: relative;
+    display: none;
+    left: 150px;
+    top: 9px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.logo{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/2175px-W3Schools_logo.svg.png);
+    background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+
+  
+}
+
+.desine, .desine1{
+    position: relative;
+display: inline-block;
+left: 1100px;
+padding-top: 30px;
+padding-right: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+}
+
+
+.juodajuosta{
+    height: 50px;
+    background-color: rgba(40,42,54,255);
+    overflow: hidden;
+
+    
+}
+
+.punktas{
+    display: inline-block;
+    padding-left: 15px;    
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 12px;
+    margin-left: 10px;
+  
+}
+
+.material-icons{
+    color: white;
+    position:relative;
+    width: 20px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+
+.meniujuosta{
+    float: left;
+    display: none;
+}
+
+
+.idesine{
+    position: relative;
+float: right;
+right: 30px;
+}
+
+
+.rozine, .zalia1{
+    position: relative;
+    border-radius: 25px 25px 25px 25px;
+    height: 40px;
+    width: 90px;
+ bottom: 8px;
+ margin-top: 5px;
+ text-align: center;
+
+}
+
+.rozine{
+    background-color: rgba(255,192,200,255);
+}
+
+.zalia1{
+    background-color: rgba(4,169,109,255);
+    color: white;
+}
+
+.tekstas{
+    position: relative;
+    top: 8px;
+    right: 5px;
+    
+}
+.tekstas1{
+    position: relative;
+    top: 8px;
+
+}
+.pagrindinis{
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    left: 200px;
+    width: 75%;
+    height: 190%;
+}
+
+.blokas1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    height: 200px;
+    width: calc(95vw - 200px);
+   
+}
+
+
+
+.home, .next{
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(6,168,112,255);
+    border-radius: 10%;
+    height: 45px;
+    width: 90px;
+   padding-top: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.pavadinimas2{
+    font-size: 38px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+}
+
+.mygtukai{
+ padding-top: 30px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.laukas{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  width: calc(100%-200px);
+  background-color: rgba(217,237,225,255);
+
+}
+
+
+.blokas2{
+  position: absolute;
+  display: flex;
+flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+  width: calc(75vw-200px);
+  top: 250px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+
+}
+
+.tekstas{
+    display: block;
+    padding-left:15px;
+
+}
+
+.blokas3{
+    position: absolute;
+  display: flex;
+flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  width: calc(86vw - 200px);
+  top: 500px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.pavadinimas3{
+    font-size: 34px;
+    padding-left: 30px;
+}
+
+.antr{
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 10px;
+
+}
+
+.example{
+    position: relative;
+    font-size: 20px;
+    background-color: lightgray;
+    height: 150px;
+    width: calc(100%-200px);
+    top: 15px;
+    left: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+.select{
+    position: relative;
+    top: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    background-color: white;
+    height: 30px;
+    width: 98%;
+    
+
+}
+
+.try{
+    position: relative;
+    text-align: center;
+    top: 30px;
+    background-color: rgba(6,168,112,255);
+    height: 40px;
+    width: 150px;
+    padding-top: 3px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.stulpelis{
+    float: left;
+    background-color: gainsboro;
+    width: 200px;
+    padding-left: 8px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+.virsutinis{
+    position: absolute;
+    display: none;
+    top: 130px;
+}
+
+
+
+.pavadinimas{
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sql{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4px;
+    font-size: 17px;
+}
+
+
+
+  @media screen and (max-width: 1800px){
+    .idesine, .desine{
+       display: relative;
+    }
+    .zodis{
+        top: 0px
+    }
+      .meniujuosta{
+          display: block;
+      }
+
+    .idesine{
+        display: none;
+    }
+    .desine1{
+        left:550px;
+        padding: auto;
+        margin-top: -40px;
+    }
+    .desine{
+        left:550px;
+    }
+}
+  
+
+  @media screen and (max-width: 600px){
+      .meniujuosta{
+          display: block;
+      }
+.meniujuosta:hover + .virsutinis{
+    display: block;
+    position:absolute;
+    z-index: 1;
+    float: left;
+    text-align: center;
+    
+}
+
+.blokas1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    left: -180px;
+    top: 30px;
+    height: 200px;
+    width: 100vw;
+}
+
+.blokas2{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200px;
+    width: 100vw;
+    left: -180px;
+    top: 220px;
+    max-width: 500px;
+    
+  
+  }
+
+  .zodis{
+      display: none;
+  }
+
+  .meniu{
+      display: block;
+      top: 25px;
+  }
+  .desine1{
+      left:350px;
+      top: 10px;
+  }
+  .desine{
+      display: none;
+  }
+  .apatinis{
+    position: absolute;
+  display: none;
+}
+
+.reklama{
+    display: none;
+}
+
+.blokas3{
+    padding-top: 10px;
+    left: -180px
+}
+}
+
+
+  

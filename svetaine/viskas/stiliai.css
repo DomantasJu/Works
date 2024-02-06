@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.puslapis{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.header{
+    Display: block;
+    background-color: darkgrey;
+    height:35px;
+    margin:0;
+    padding:0;
+}
+.CONTACT US{
+    background-color: black;
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 10px;
+}
+.AFTERCARE{ 
+    margin:auto;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 17px;
+    background-color: black;
+    color: white;
+}
+.TEAM{
+    background-color: black;
+    color: white;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 35px;
+}
+.ABOUT US{
+    background-color: black;
+    color: white;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10px;
+}
+.GALLERY{
+    background-color: black;
+    color: white;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 16px;
+}
+.langas{
+    margin:auto;
+    margin-top: 20px;
+    display: block;
+    Height: 200px;
+    width: 1000px;
+    background-color: black;
+}
+.nuotrauka{
+    Margin:auto;
+    margin-top: 2px;
+    display: block;
+    Height: 150px;
+    width: 950px; 
+    background-color: lightgray;
+}
+.langass{
+    margin:auto;
+    margin-left: 65%;
+    margin-top: 20px;
+    display: block;
+    Height: 200px;
+    width: 250px;
+    position:absolute;
+    background-color: darkgrey;
+}
+.nuotraukaa{
+    Margin:auto;
+    margin-top: 25px;
+    display: block;
+    Height: 150px;
+    width: 200px; 
+    background-color: lightgray;
+}
+.langasss{
+    margin:auto;
+    margin-left: 40%;
+    margin-top: 20px;
+    display: block;
+    Height: 200px;
+    width: 250px;
+    position: absolute;
+    background-color: darkgrey;
+}
+.langassss{
+    margin:auto;
+    margin-left: 18%;
+    margin-top: 20px;
+    display: block;
+    Height: 200px;
+    width: 250px;
+    position: absolute;
+    background-color: darkgrey;
+}
+.footer {
+    text-align: inherit;
+    padding: 10px;
+    height: 5%;
+    background-color: lightgray;
+}

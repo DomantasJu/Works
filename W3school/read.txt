@@ -1,0 +1,2 @@
+This was university project, where we had to re-create all the design and style 
+from a W3school website.
